@@ -1,0 +1,12 @@
+<% if notice %>
+    <p id="notice"><%= notice %></p>
+<% end %>
+
+<% @travellers.each do |traveller| %>
+    <div class="entry">
+      <h3>姓名:<%= traveller.name %></h3>
+      <h3>编号:<%= traveller.no %></h3>
+      <h3>性别:<%= traveller.sex %></h3>
+      <h3>身份证号：<%= traveller.idnum %></h3>
+    </div>
+<% end %>

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>No:</strong>
+  <%= @traveller.no %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @traveller.name %>
+</p>
+
+<p>
+  <strong>Sex:</strong>
+  <%= @traveller.sex %>
+</p>
+
+<p>
+  <strong>Idnum:</strong>
+  <%= @traveller.idnum %>
+</p>
+
+<%= link_to 'Edit', edit_traveller_path(@traveller) %> |
+<%= link_to 'Back', travellers_path %>
